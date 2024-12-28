@@ -1,0 +1,127 @@
+@font-face {
+  font-family: ravi;
+  src: url(./BYekan.ttf);
+}
+.main_containar {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  flex-wrap: wrap;
+
+}
+
+.search_filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search_filter input[type="text"] {
+  width: 80%;
+  outline: none;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  font-family: ravi;
+  text-align: right;
+  direction: rtl;
+  
+}
+.eachphotodiv {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 1px 2px royalblue;
+  border-radius: 5px;
+  width: 17%;
+margin: 10px;
+}
+
+.eachphotodiv img {
+  width: 100%;
+  height: 75%;
+}
+
+.eachphotodiv span {
+  text-align: center;
+  font-family: ravi;
+  font-size: 14px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 40px;
+  margin-bottom: 15px;
+  width: 100%;
+  opacity: 0;
+
+  transform: translateY(-50%)
+}
+
+.ball {
+  background-color: red;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  margin: 5px;
+  /* animation: jump 0.3; */
+ 
+  animation: fatemeh 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+
+}
+
+@keyframes fatemeh {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+.Fatemeh_Norozi>p {
+  animation: fatemeh 6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(219, 15, 120);
+  padding-top: 40px;
+  border-radius: 60px;
+
+}
+.loading.show{
+  opacity: 1;
+}  
